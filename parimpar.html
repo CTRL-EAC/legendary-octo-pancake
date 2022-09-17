@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        ul,
+        li,
+        a {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .button {
+            text-decoration: none;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+            margin: 3rem;
+            display: flex;
+            width: 300px;
+            height: 60px;
+            line-height: 60px;
+            background-color: goldenrod;
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            border: 0;
+            border-radius: 2rem;
+        }
+
+        .button:hover {
+            background: green;
+        }
+
+        .container {
+            margin: 0 auto;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>
+                <a href="./parimpar.html" class="button">Par e impar</a>
+                <a href="./sumamedia.html" class="button">Suma y media</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // Crear una función que permita el ingreso de un número entero y determine si es par o impar
+        function parOimpar(numero) {
+            if (numero % 2 == 0) {
+                return numero + ` es número par`;
+            } else {
+                return numero + ` es número impar`;
+            }
+        }
+        // Ingresar por teclado
+        var x = parseInt(prompt(`Ingrese un número`));
+        alert(parOimpar(x));
+    </script>
+</body>
+
+</html>
